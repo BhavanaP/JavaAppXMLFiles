@@ -1,6 +1,6 @@
 # JavaAppXMLFiles
 
-In this Java Application,it that processes XML Files and produces output as html, MySQL and PHP file scripts.
+Java Application that processes XML Files and produces output as html, MySQL and PHP file scripts.
 
 XML Parsing
 
@@ -12,16 +12,13 @@ A Java servlet or PhP source file that contains code to display contents of the 
 
 Data Input Forms
 
-A data input form consists of one or more form elements that is capable of accepting input from a user. I have consider 7 types of form elements: textbox, submit, reset, check box, radio buttons, select list, and multiple select list. Each of these form elements except for submit and reset has a datatype (integer, decimal, or string) associated with it. If a datatype is not provided, string would be assumed as the default data type.
+A data input form consists of one or more form elements that is capable of accepting input from a user. I have considered 7 types of form elements: textbox, submit, reset, check box, radio buttons, select list, and multiple select list. Each of these form elements except for submit and reset has a datatype (integer, decimal, or string) associated with it. If a datatype is not provided, string would be assumed as the default data type.
 If a data input form contains at least one multiselect form element or a check box group of two or more check boxes, one or more of the remaining (single valued) form elements must be classified as key elements. This is to facilitate creating a separate relational table for storing the multiple select values.
 
-The data input form is described in XML. Some sample forms are shown below:
+The data input form is described in XML.
 
-form1.xml.
-form2.xml.
 XML Schema for Data Input Forms
 
-Some comments on the XML schema for data input forms (Note: You do not have to write a XML Schema for this!, although it would be nice to do so and validate the data input form XML files):
 Every data input form must have a title element which must have a caption sub-element. The id attribute of the root element is ignored.
 Following the title element, the data input form may have one or more form elements which can be one of 7 form element types described earlier.
 Any number of break elements may be present between form elements or between the different options in a check box group or radio button group.
@@ -32,4 +29,4 @@ The select element has a name, caption, and options sub-elements. The options el
 The multiselect element is similar to the select element except that it has an additional sub-element, size, which indicates the size of the select window.
 Semantic Checks
 
-Your XML parser program should check for semantic errors such as form element without a name or caption, more than one form element having the same name, data type mis-match, etc. and report these. No output is generated in this case.
+XML parser program should check for semantic errors such as form element without a name or caption, more than one form element having the same name, data type mis-match, etc. and report these. No output is generated in this case.
